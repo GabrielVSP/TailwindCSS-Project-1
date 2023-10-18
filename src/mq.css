@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+
+    .about {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+    .about .author, .about .message {
+
+        width: 90%;
+
+    }
+
+    .about .message div.flex div {
+
+        width: 45%;
+
+    }
+
+    .places .wrapper {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .places .wrapper div {
+
+        width: 80%;
+
+    }
+
+    .places .wrapper div div.flex {
+        width: 100%;
+    }
+
+    .team .wrapper {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .team .wrapper > div {
+
+        width: 80%;
+        flex-basis: 80%;
+
+    }
+
+    .contact form input[type=text] {
+
+        width: 100%;
+
+    }
+
+}

@@ -64,3 +64,19 @@
     }
 
 }
+
+@media screen and (max-width: 663px) {
+
+    header nav.mobileNav {
+
+        display: block
+
+    }
+
+    header nav.desktop {
+
+        display: none;
+
+    }
+
+}

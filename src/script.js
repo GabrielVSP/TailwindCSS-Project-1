@@ -1,9 +1,10 @@
-const btn = document.querySelector('div.mobileBtn')
+const mobileBtn = document.querySelector('div.mobileBtn')
 const navMobile = document.querySelector('ul.mobileList')
+const menuButtons = document.querySelectorAll('nav a')
 
 let debounce = false
 
-btn.addEventListener('click', toggleMenu)
+mobileBtn.addEventListener('click', toggleMenu)
 
 function toggleMenu() {
 
@@ -23,3 +24,22 @@ function toggleMenu() {
     }
 
 }
+
+menuButtons.forEach(btn => {
+    
+    btn.addEventListener('click', (e) => {
+    
+        e.preventDefault()
+
+        if (document.querySelector('.'+e.target.name) !== null && document.querySelector('.'+e.target.name) !== undefined) {
+
+            let el = document.querySelector('.'+e.target.name)
+
+            el.scrollIntoView({behavior: 'smooth'})
+            mobileBtn.click()
+
+        }
+
+    })
+
+});

@@ -10,7 +10,7 @@
 
     .about .author, .about .message {
 
-        width: 90%;
+        width: 100%;
 
     }
 
@@ -79,4 +79,14 @@
 
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    
+    .team .wrapper > div > div {
+
+        width: 80%;
+
+    }
+    
 }

@@ -8,20 +8,7 @@ mobileBtn.addEventListener('click', toggleMenu)
 
 function toggleMenu() {
 
-    if(debounce === false) {
-
-        navMobile.style.display = 'block'
-
-        debounce = true
-
-
-    }else {
-
-        navMobile.style.display = 'none'
-
-        debounce = false
-
-    }
+    navMobile.classList.toggle('hidden')
 
 }
 
